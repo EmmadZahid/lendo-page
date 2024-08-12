@@ -1,0 +1,10 @@
+.nav-border {
+  display: none;
+}
+
+.active {
+  font-weight: bold;
+  .nav-border {
+    display: block;
+  }
+}
