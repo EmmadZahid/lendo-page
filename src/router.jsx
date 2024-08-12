@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 import { AutoInvestPage } from "./pages/AutoInvest";
 import MainLayout from "./layout/MainLayout";
 import { InvestPage } from "./pages/Invest";
@@ -16,6 +16,7 @@ const routes = [
         element: <InvestPage />,
       },
       {
+        index: true,
         path: "auto-investment",
         element: <AutoInvestPage />,
       },
@@ -25,7 +26,7 @@ const routes = [
       },
       {
         path: "*",
-        element: <InvestPage />,
+        element: <Navigate to="/auto-investment" />,
       },
     ],
   },

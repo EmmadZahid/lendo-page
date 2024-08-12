@@ -1,9 +1,5 @@
-import classNames from "classnames";
 import "./InterestRateBox.scss";
 export const InterestRateBox = ({ className, size = "lg" }) => {
-  // const classes = classNames({
-  //     ''
-  // })
   return (
     <div
       className={`rounded-[16px] bg-lendo-primary interest-rate-box ${size} ${className}`}
